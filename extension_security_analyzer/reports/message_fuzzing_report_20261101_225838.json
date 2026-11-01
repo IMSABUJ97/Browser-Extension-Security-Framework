@@ -1,0 +1,36 @@
+{
+    "timestamp": "20261101_225838",
+    "module": "message_fuzzing",
+    "results": [
+        {
+            "payload": "{\"__proto__\": {\"vulnerable\": \"yes\"}}",
+            "vulnerable": false,
+            "error": null
+        },
+        {
+            "payload": "{\"constructor\": {\"prototype\": {\"vulnerable\": \"yes\"}}}",
+            "vulnerable": false,
+            "error": null
+        },
+        {
+            "payload": "{\"data\": \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA ... [TRUNCATED]",
+            "vulnerable": false,
+            "error": null
+        },
+        {
+            "payload": "{\"nested\": {\"nested\": {\"nested\": \"value\"}}}",
+            "vulnerable": false,
+            "error": null
+        },
+        {
+            "payload": "{\"action\": 12345}",
+            "vulnerable": false,
+            "error": null
+        },
+        {
+            "payload": "{\"action\": null}",
+            "vulnerable": false,
+            "error": null
+        }
+    ]
+}

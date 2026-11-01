@@ -1,0 +1,82 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Extension Security Analyzer Report</title>
+            <style>
+                body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f4f7f6; color: #333; }
+                h1 { text-align: center; color: #2c3e50; }
+                .summary { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
+                table { width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+                th, td { padding: 12px 15px; border: 1px solid #ddd; text-align: left; }
+                th { background-color: #34495e; color: white; text-transform: uppercase; font-size: 14px; }
+                tr:nth-child(even) { background-color: #f9f9f9; }
+                .vulnerable { color: #e74c3c; font-weight: bold; }
+                .safe { color: #27ae60; font-weight: bold; }
+                .error { color: #f39c12; }
+            </style>
+        </head>
+        <body>
+            <h1>Extension Security Simulator Report</h1>
+            
+            <div class="summary">
+                <h2>Scan Summary</h2>
+                <p><strong>Module Name:</strong> Message_Fuzzing</p>
+                <p><strong>Date & Time:</strong> 2026-11-01 23:05:19</p>
+                <p><strong>Total Tests Executed:</strong> 6</p>
+            </div>
+
+            <h2>Detailed Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Test / Payload ID</th>
+                        <th>Status</th>
+                        <th>Details / Observation</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                    <tr>
+                        <td><code>{"__proto__": {"vulnerable": "yes"}}</code></td>
+                        <td class="safe">SAFE</td>
+                        <td>No vulnerability detected.</td>
+                    </tr>
+                
+                    <tr>
+                        <td><code>{"constructor": {"prototype": {"vulnerable": "yes"}}}</code></td>
+                        <td class="safe">SAFE</td>
+                        <td>No vulnerability detected.</td>
+                    </tr>
+                
+                    <tr>
+                        <td><code>{"data": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA ... [TRUNCATED]</code></td>
+                        <td class="safe">SAFE</td>
+                        <td>No vulnerability detected.</td>
+                    </tr>
+                
+                    <tr>
+                        <td><code>{"nested": {"nested": {"nested": "value"}}}</code></td>
+                        <td class="safe">SAFE</td>
+                        <td>No vulnerability detected.</td>
+                    </tr>
+                
+                    <tr>
+                        <td><code>{"action": 12345}</code></td>
+                        <td class="safe">SAFE</td>
+                        <td>No vulnerability detected.</td>
+                    </tr>
+                
+                    <tr>
+                        <td><code>{"action": null}</code></td>
+                        <td class="safe">SAFE</td>
+                        <td>No vulnerability detected.</td>
+                    </tr>
+                
+                </tbody>
+            </table>
+        </body>
+        </html>
+        
